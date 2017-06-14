@@ -27,7 +27,7 @@ namespace web_api.Controllers
         }
 
         // GET api/values/5
-        [HttpGet("{id}")]
+        [HttpGet("{searchString}")]
         public async Task<IEnumerable<Nation>> Get(string searchString)
         {
             var nations = new List<Nation>();
