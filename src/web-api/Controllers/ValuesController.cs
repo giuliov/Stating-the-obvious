@@ -6,17 +6,18 @@ using Microsoft.AspNetCore.Mvc;
 using web_api.Models;
 using System.Data.SqlClient;
 using Microsoft.Extensions.Options;
+using Microsoft.Extensions.Configuration;
 
 namespace web_api.Controllers
 {
     [Route("api/[controller]")]
     public class ValuesController : Controller
     {
-        private readonly MyOptions _options;
+        private IConfiguration Configuration { get; set; }
 
-        public ValuesController(IOptions<MyOptions> optionsAccessor)
+        public ValuesController(IConfiguration configuration)
         {
-            _options = optionsAccessor.Value;
+            Configuration = configuration;
         }
 
         // GET api/values
@@ -32,7 +33,7 @@ namespace web_api.Controllers
         {
             var nations = new List<Nation>();
 
-            string connectionString = _options.Data.ConnectionString;
+            string connectionString = Configuration.GetConnectionString("DefaultConnection");
 
             using (var conn = new SqlConnection(connectionString))
             {

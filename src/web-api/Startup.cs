@@ -17,7 +17,7 @@ namespace web_api
             var builder = new ConfigurationBuilder()
                 .SetBasePath(env.ContentRootPath)
                 .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
-                .AddIniFile($"appsettings.{env.EnvironmentName}.ini", optional: false, reloadOnChange: true)
+                //.AddApplicationInsightsSettings()
                 .AddEnvironmentVariables();
             Configuration = builder.Build();
         }
@@ -27,14 +27,9 @@ namespace web_api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            // Adds services required for using options.
-            services.AddOptions();
-
-            // Register the IConfiguration instance which MyOptions binds against.
-            services.Configure<MyOptions>(Configuration);
-
             // Add framework services.
             services.AddMvc();
+            services.AddSingleton<IConfiguration>(Configuration);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

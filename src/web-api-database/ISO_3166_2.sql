@@ -1,0 +1,4 @@
+﻿CREATE TABLE ISO_3166_2 (
+      Code    CHAR(2) NOT NULL,
+      Name    NVARCHAR(1024) NOT NULL
+  )
