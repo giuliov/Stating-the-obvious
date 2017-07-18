@@ -3,9 +3,16 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp1.1</TargetFramework>
     <UserSecretsId>c71aed97-681b-4931-a8f2-1d04ea4fe76f</UserSecretsId>
+    <ApplicationInsightsResourceId>/subscriptions/9c08dcdd-9dcd-4955-9419-9c1161171463/resourcegroups/stating-the-obvious/providers/microsoft.insights/components/stating-the-obvious-web</ApplicationInsightsResourceId>
+    <ApplicationInsightsAnnotationResourceId>/subscriptions/9c08dcdd-9dcd-4955-9419-9c1161171463/resourcegroups/stating-the-obvious/providers/microsoft.insights/components/stating-the-obvious-web</ApplicationInsightsAnnotationResourceId>
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Properties\PublishProfiles\stating-the-obvious-web - Web Deploy.pubxml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\PublishProfiles\" />
     <Folder Include="Properties\PublishProfiles\" />
     <Folder Include="wwwroot\" />
   </ItemGroup>
@@ -19,6 +26,9 @@
   </ItemGroup>
   <ItemGroup>
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="1.0.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services" />
   </ItemGroup>
 
 </Project>
