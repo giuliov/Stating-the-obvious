@@ -57,9 +57,11 @@
     <Compile Include="ValidateContextValue.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Azure.testsettings" />
     <None Include="LoadTest1.loadtest">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Local.testsettings" />
     <None Include="packages.config" />
     <None Include="WebTest1.webtest">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
