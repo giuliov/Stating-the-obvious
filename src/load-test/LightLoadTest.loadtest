@@ -435,21 +435,6 @@
           </CounterSetReferences>
         </CounterSetMapping>
       </CounterSetMappings>
-      <Applications>
-        <AutComponent Description="" Id="ApplicationInsights~/subscriptions/9c08dcdd-9dcd-4955-9419-9c1161171463/resourceGroups/stating-the-obvious/providers/Microsoft.Insights/components/stating-the-obvious-web" Name="stating-the-obvious-web" Type="ApplicationInsights" Separator="\" Version="3.0">
-          <AutCounters>
-            <AutCounter Description="ASP.NET request execution time" Id="/subscriptions/9c08dcdd-9dcd-4955-9419-9c1161171463/resourceGroups/stating-the-obvious/providers/Microsoft.Insights/components/stating-the-obvious-web~performanceCounters/requestExecutionTime~avg" Name="ASP.NET request execution time" Path="\stating-the-obvious-web\ASP.NET request execution time\performanceCounters/requestExecutionTime\avg" />
-            <AutCounter Description="ASP.NET request execution time" Id="/subscriptions/9c08dcdd-9dcd-4955-9419-9c1161171463/resourceGroups/stating-the-obvious/providers/Microsoft.Insights/components/stating-the-obvious-web~performanceCounters/requestExecutionTime~max" Name="ASP.NET request execution time" Path="\stating-the-obvious-web\ASP.NET request execution time\performanceCounters/requestExecutionTime\max" />
-            <AutCounter Description="ASP.NET request execution time" Id="/subscriptions/9c08dcdd-9dcd-4955-9419-9c1161171463/resourceGroups/stating-the-obvious/providers/Microsoft.Insights/components/stating-the-obvious-web~performanceCounters/requestExecutionTime~min" Name="ASP.NET request execution time" Path="\stating-the-obvious-web\ASP.NET request execution time\performanceCounters/requestExecutionTime\min" />
-            <AutCounter Description="ASP.NET request rate" Id="/subscriptions/9c08dcdd-9dcd-4955-9419-9c1161171463/resourceGroups/stating-the-obvious/providers/Microsoft.Insights/components/stating-the-obvious-web~performanceCounters/requestsPerSecond~avg" Name="ASP.NET request rate" Path="\stating-the-obvious-web\ASP.NET request rate\performanceCounters/requestsPerSecond\avg" />
-            <AutCounter Description="ASP.NET request rate" Id="/subscriptions/9c08dcdd-9dcd-4955-9419-9c1161171463/resourceGroups/stating-the-obvious/providers/Microsoft.Insights/components/stating-the-obvious-web~performanceCounters/requestsPerSecond~count" Name="ASP.NET request rate" Path="\stating-the-obvious-web\ASP.NET request rate\performanceCounters/requestsPerSecond\count" />
-            <AutCounter Description="ASP.NET request rate" Id="/subscriptions/9c08dcdd-9dcd-4955-9419-9c1161171463/resourceGroups/stating-the-obvious/providers/Microsoft.Insights/components/stating-the-obvious-web~performanceCounters/requestsPerSecond~max" Name="ASP.NET request rate" Path="\stating-the-obvious-web\ASP.NET request rate\performanceCounters/requestsPerSecond\max" />
-            <AutCounter Description="ASP.NET request rate" Id="/subscriptions/9c08dcdd-9dcd-4955-9419-9c1161171463/resourceGroups/stating-the-obvious/providers/Microsoft.Insights/components/stating-the-obvious-web~performanceCounters/requestsPerSecond~min" Name="ASP.NET request rate" Path="\stating-the-obvious-web\ASP.NET request rate\performanceCounters/requestsPerSecond\min" />
-            <AutCounter Description="ASP.NET requests in application queue" Id="/subscriptions/9c08dcdd-9dcd-4955-9419-9c1161171463/resourceGroups/stating-the-obvious/providers/Microsoft.Insights/components/stating-the-obvious-web~performanceCounters/requestsInQueue~max" Name="ASP.NET requests in application queue" Path="\stating-the-obvious-web\ASP.NET requests in application queue\performanceCounters/requestsInQueue\max" />
-            <AutCounter Description="Process CPU (all cores)" Id="/subscriptions/9c08dcdd-9dcd-4955-9419-9c1161171463/resourceGroups/stating-the-obvious/providers/Microsoft.Insights/components/stating-the-obvious-web~performanceCounters/processCpuPercentageTotal~avg" Name="Process CPU (all cores)" Path="\stating-the-obvious-web\Process CPU (all cores)\performanceCounters/processCpuPercentageTotal\avg" />
-          </AutCounters>
-        </AutComponent>
-      </Applications>
       <LoadGeneratorLocations>
         <GeoLocation Location="West Europe" Percentage="100" />
       </LoadGeneratorLocations>
